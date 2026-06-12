@@ -48,7 +48,6 @@ services:
   - type: web
     name: astra-x-frontend
     runtime: static
-    plan: free
     rootDir: apps/frontend
     buildCommand: npm install && npm run build
     staticPublishPath: out
