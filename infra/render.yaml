@@ -21,6 +21,8 @@ services:
         sync: false
       - key: TERMINAL3_BASE_URL
         value: https://astra-x-t3-bridge.onrender.com/v1
+      - key: TERMINAL3_DID
+        sync: false
       - key: MODEL_CACHE_DIR
         value: /tmp/model_cache
       - key: PYTHON_VERSION
@@ -36,6 +38,8 @@ services:
     startCommand: npm start
     envVars:
       - key: TERMINAL3_API_KEY
+        sync: false
+      - key: TERMINAL3_DID
         sync: false
 
   # ── Frontend Static Site ─────────────────────────
