@@ -43,12 +43,11 @@ services:
         sync: false
 
   # ── Frontend Static Site ─────────────────────────
-  - type: web
+  - type: static
     name: astra-x-frontend
-    runtime: static
     rootDir: apps/frontend
     buildCommand: npm install && npm run build
-    staticPublishPath: out
+    publishPath: out
     envVars:
       - key: NEXT_PUBLIC_API_URL
         value: https://astra-x-api.onrender.com
