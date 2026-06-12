@@ -45,7 +45,7 @@ export default function ReadinessPage() {
         </div>
         <Button
           variant="outline"
-          onClick={() => predict.mutate()}
+          onClick={() => predict.mutate(undefined)}
           disabled={predict.isPending}
         >
           {predict.isPending ? (
